@@ -1,0 +1,9 @@
+<!-- app/templates/components/ultimata-list.hbs -->
+<div class="list-group">
+    <!-- let's set this up for the real thing-->
+  {{#each ultimata as |ultimatum| }}
+    {{#link-to 'ultimata.ultimatum' ultimatum class="list-group-item"}}<!-- NEW -->
+      {{ultimatum.shortTitle}}
+    {{/link-to}}
+  {{/each}}
+</div>

@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('ultimata', function() {
+    this.route('ultimatum', { path: ':ultimatum_id'});
+  });
 });
 
 export default Router;
